@@ -1,0 +1,52 @@
+
+
+body{
+    text-align: center;
+    
+}
+
+body .form
+{
+    background-color: #5c007a;
+    display: inline-block;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px 18px;
+    margin: 10% auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+h2,label{
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+}
+
+h1,input::-webkit-input-placeholder,button{
+    font-family: 'Roboto',sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+input{
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #1abc9c;
+    border-radius: 5px;
+}
+
+#submit{
+    border:none;
+    background: #1abc9c;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 100px;
+    color: white;
+    margin-left: 0px;
+
+}

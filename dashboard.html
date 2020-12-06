@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> BugMe Issue Tracker </title>
+	<link rel="stylesheet" href="styles/bugme.css">
+</head>
+
+<body>
+
+	<h1 class="new_issue">Create Issue </h1>
+
+	<form id="create_issue" action="" method="post">
+		<label class="input">Title</label>
+		<input id="title" class="input" type="text" name="title" value=''>
+		<label class="input">Decription</label>
+		<textarea id="description" class="input" type="text" name="description" form="create_issue" value=''></textarea>
+		<label class="input">Assigned To:</label>
+		<input id="user" class="input" list="userlist" name="user" value=''>
+		<label class="input">Type</label>
+		<input id="error_type" class="input" list="type" name="error_type" value=''>
+		<label class="input">Priority</label>
+		<input id="priority" class="input" list="prioritylist" name="priority" value=''>
+
+
+
+		<datalist id="userlist"></datalist>
+
+		<datalist id="type">
+			<option>Bug</option>
+			<option>Proposal</option>
+			<option>Task</option>
+		</datalist>
+
+		<datalist id="prioritylist">
+			<option>Minor</option>
+			<option>Major</option>
+			<option>Critical</option>
+		</datalist>
+
+		<br>
+
+		<button id="new_issuebtn" type="button" name="Submitbtn" value="Submit">Submit</button>
+	</form>
+
+
+</body>
+
+</html>
+
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="images/logo.png" alt="logo">
+		<h1 class="label">BugMe Issue Tracker </h1>
+	</header>
+	<div class="sidebar">
+        <a id="home" href="#" class="menu"><img src="images/home.png" class="icons" alt="home button"> Home</a>
+        
+        <a id="adduser" href="#" class="menu"><img src="images/adduser.png" class="icons" alt="add user"> Add User</a>
+        
+        <a id="newissue" href="#" class="menu"><img src="images/newissue.png" class="icons" alt="new issue"> New Issue</a>
+        
+		<a id="logout" href="#" class="menu"><img src="images/logout.png" class="icons" alt="logout"> Logout</a>
+
+
+	</div>
+
+
+	<div id="center" class="center">
+
+
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> BugMe Issue Tracker </title>
+    <link rel="stylesheet" href="styles/bugme.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <h1 class="label">BugMe Issue Tracker </h1>
+    </header>
+    <div class="sidebar">
+        <a id="home" class="menu"><img src="images/home.png" class="icons" alt="home button"> Home</a>
+
+        <a id="adduser" class="menu"><img src="images/adduser.png" class="icons" alt="add user"> Add User</a>
+
+        <a id="newissue" class="menu"><img src="images/newissue.png" class="icons" alt="new issue"> New Issue</a>
+
+        <a id="logout" class="menu"><img src="images/logout.png" class="icons" alt="logout"> Logout</a>
+
+
+    </div>
+
+
+    <div id="center" class="center">
+        <div id="issuepage" class="panel">
+
+
+        </div>
+
+        <div id='createIssue' class="panel">
+            <h1 class="new_issue">Create Issue </h1>
+
+            <form id="createIssueForm">
+                <label class="input">Title</label>
+                <input id="title" class="input" type="text" name="title" value=''>
+                <label class="input">Decription</label>
+                <textarea id="description" class="input" type="text" name="description" form="create_issue" value=''></textarea>
+                <label class="input">Assigned To:</label>
+                <input id="assigned" class="input" list="userlist" name="user" value=''>
+                <label class="input">Type</label>
+                <input id="issuetype" class="input" list="type" name="error_type" value=''>
+                <label class="input">Priority</label>
+                <input id="priority" class="input" list="prioritylist" name="priority" value=''>
+
+
+
+                <datalist id="userlist"></datalist>
+
+                <datalist id="type">
+                    <option>Bug</option>
+                    <option>Proposal</option>
+                    <option>Task</option>
+                </datalist>
+
+                <datalist id="prioritylist">
+                    <option>Minor</option>
+                    <option>Major</option>
+                    <option>Critical</option>
+                </datalist>
+
+                <br>
+
+                <button id="newissuebtn" type="button" value="Submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="issuses" class="panel">
+
+            <div class="top">
+                <h1 class="newuser"> Issues </h1>
+                <a href="#" id="createIssue"><button class="createIssue"> Create New Issue </button></a>
+            </div>
+
+
+            <div class="filter">
+                <h2 class="filter">Filter By:</h2>
+                <button id="all" class="filterby">ALL</button>
+                <button id="open" class="filterby">OPEN</button>
+                <button id="mytickets" class="filterby">MY TICKETS</button>
+            </div>
+
+            <div id="allissues">
+            </div>
+        </div>
+        <div id="createUser" class="panel">
+            <h1 class="newuser"> New User </h1>
+
+            <form id="addUserForm">
+
+                <label class="input"> First Name </label>
+                <input type="text" id="fname" class="input" name="fname">
+
+                <label class="input">Last Name</label>
+                <input type="text" id="lname" class="input" name="lname">
+
+                <label class="input"> Password </label>
+                <input type="password" id="pwd" class="input" name="pwd">
+
+                <label class="input">Email</label>
+                <input type="text" id="email" class="input" name="email">
+
+                <button type="button" id="adduserbtn" name='Submit'>Submit </button>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/bugme.js" type="text/javascript"></script>
+</body>
+
+</html>

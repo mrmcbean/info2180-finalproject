@@ -1,52 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One&display=swap');
 
+:root{
+   
+    --defaultFontFamily: Arial; 
+    --defaultFontSize: 13px;
+    --bGCol: rgb(40, 136, 107);
+    --formCol: rgb(35, 243, 35);
+    --validErrorCol:rgb(0, 162, 255);
+    --black:black; 
+}
 
-body{
-    text-align: center;
+header {
+	grid-column: 1/5;
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	color: white;
+	display: inline-block;
+}
+
+.logo {
+	position: relative;
+	top: 13px;
+	height: 50px;
+	width: 50px;
+
+}
+
+.logo,
+h1.label {
+	display: inline;
+	padding-left: 10px;
+	vertical-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(40, 136, 107);
+}
+
+#form{
     
+        width: 20%;
+        margin: 50px auto;
+        padding: 50px;
+        background:var(--bGCol);
+        text-align: center;
+        border-radius: 35px;
 }
 
-body .form
-{
-    background-color: #5c007a;
-    display: inline-block;
-    border-radius: 5px;
-    height: auto;
-    padding: 15px 18px;
-    margin: 10% auto;
-    margin-left: auto;
-    margin-right: auto;
+form {
+      
+    margin: 20px auto;
     text-align: center;
-    font-family: 'Roboto',sans-serif;
-}
-
+    color:var(--black);
+    font-weight: bold;
+    
+  }
 h2,label{
     color: #ffffff;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Arial';
 }
 
 h1,input::-webkit-input-placeholder,button{
-    font-family: 'Roboto',sans-serif;
-    transition: all 0.3s ease-in-out;
+    font-family: 'Arial',sans-serif;
+   
 }
 
 input{
-    margin: 40px 25px;
-    width: 200px;
-    display: block;
+
     border: none;
-    padding: 10px 0;
-    border-bottom: solid 1px #1abc9c;
-    border-radius: 5px;
+    height: 25px;
+    margin: 15px;
+    border: 2px solid;
+    padding: 10px;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
 }
+    
 
-#submit{
+.btn {
     border:none;
-    background: #1abc9c;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 6px;
-    width: 100px;
-    color: white;
-    margin-left: 0px;
-
-}
+    width: 40%;
+    margin: 30px;
+    color:var(--black);
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 10px;  
+  }
